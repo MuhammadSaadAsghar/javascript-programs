@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muhammad Saad Asghar Resume</title>
+
+   
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+        <Style>
+            /* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#dfe5eb;
+    padding:40px 0;
+}
+
+/* ===========================
+   RESUME
+=========================== */
+
+.resume{
+    width:1000px;
+    margin:auto;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    border-radius:8px;
+    overflow:hidden;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:35px 40px;
+    border-bottom:4px solid #1b75bc;
+}
+
+.header-content{
+    width:75%;
+}
+
+.header-content h1{
+    font-size:38px;
+    color:#222;
+    font-weight:700;
+}
+
+.header-content h2{
+    margin-top:8px;
+    color:#1b75bc;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.contact div{
+    font-size:14px;
+    color:#444;
+}
+
+.contact i{
+    width:22px;
+    color:#1b75bc;
+}
+
+/* ===========================
+   PROFILE IMAGE
+=========================== */
+
+.profile{
+    width:180px;
+    display:flex;
+    justify-content:center;
+}
+
+.profile img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #1b75bc;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+.resume-body{
+    display:grid;
+    grid-template-columns:290px 1fr;
+}
+
+/* ===========================
+   LEFT SIDEBAR
+=========================== */
+
+.sidebar{
+    background:#f4f7fb;
+    padding:30px 25px;
+    border-right:3px solid #1b75bc;
+}
+
+/* ===========================
+   RIGHT CONTENT
+=========================== */
+
+.content{
+    padding:30px;
+}
+
+/* ===========================
+   BOX
+=========================== */
+
+.box{
+    margin-bottom:35px;
+}
+
+.box h3{
+    color:#1b75bc;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.box ul{
+    list-style:none;
+}
+
+.box ul li{
+    position:relative;
+    padding-left:18px;
+    margin-bottom:10px;
+    color:#444;
+    font-size:14px;
+}
+
+.box ul li::before{
+    content:"";
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#1b75bc;
+    position:absolute;
+    left:0;
+    top:8px;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+.section{
+    margin-bottom:35px;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.title i{
+    color:#1b75bc;
+    font-size:20px;
+}
+
+.title h2{
+    color:#1b75bc;
+    font-size:21px;
+    letter-spacing:.5px;
+}
+
+.section hr{
+    margin:10px 0 18px;
+    border:none;
+    border-top:2px solid #1b75bc;
+}
+
+.section p{
+    color:#555;
+    line-height:1.8;
+    font-size:15px;
+}
+/*====================================
+  PROJECTS
+====================================*/
+
+.project{
+    margin-bottom:25px;
+}
+
+.project-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.project-head h3{
+    font-size:18px;
+    color:#222;
+    font-weight:600;
+}
+
+.links{
+    display:flex;
+    gap:10px;
+}
+
+.links a{
+    text-decoration:none;
+    color:#1b75bc;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.links a:hover{
+    color:#0d5ca6;
+    text-decoration:underline;
+}
+
+.project p{
+    color:#555;
+    line-height:1.7;
+    margin:8px 0;
+}
+
+.project strong{
+    color:#222;
+}
+
+.dashed{
+    border:none;
+    border-top:1px dashed #bfc7d1;
+    margin:20px 0;
+}
+
+/*====================================
+  EDUCATION
+====================================*/
+
+.edu{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    background:#f8fbff;
+    border-left:5px solid #1b75bc;
+    padding:18px 20px;
+    border-radius:6px;
+}
+
+.edu h3{
+    font-size:17px;
+    color:#222;
+    margin-bottom:8px;
+}
+
+.edu p{
+    color:#666;
+    font-size:14px;
+}
+
+.edu span{
+    background:#1b75bc;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/*====================================
+  CERTIFICATES
+====================================*/
+
+.certificate{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f7f9fc;
+    padding:14px 18px;
+    margin-bottom:12px;
+    border-radius:6px;
+    border-left:4px solid #1b75bc;
+}
+
+.certificate span{
+    color:#333;
+    font-size:15px;
+}
+
+.certificate strong{
+    color:#1b75bc;
+}
+
+/*====================================
+  ADDITIONAL INFO
+====================================*/
+
+.info{
+    list-style:none;
+}
+
+.info li{
+    margin-bottom:12px;
+    padding-left:20px;
+    position:relative;
+    color:#555;
+    line-height:1.7;
+}
+
+.info li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:#1b75bc;
+    font-weight:bold;
+}
+
+/*====================================
+  GENERAL LIST
+====================================*/
+
+.section ul{
+    padding-left:20px;
+}
+
+.section ul li{
+    margin-bottom:10px;
+    color:#555;
+    line-height:1.7;
+}
+
+/*====================================
+  BUTTONS (Optional)
+====================================*/
+
+.btn{
+    display:inline-block;
+    background:#1b75bc;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0d5ca6;
+}
+
+/*====================================
+  SHADOW EFFECT
+====================================*/
+
+.box,
+.section{
+    transition:.3s;
+}
+
+.box:hover,
+.section:hover{
+    transform:translateY(-2px);
+}
+
+/*====================================
+  ICON COLOR
+====================================*/
+
+.fa-phone,
+.fa-envelope,
+.fa-location-dot,
+.fa-globe,
+.fa-github,
+.fa-linkedin,
+.fa-code,
+.fa-gear,
+.fa-language,
+.fa-user,
+.fa-briefcase,
+.fa-graduation-cap,
+.fa-award,
+.fa-circle-info{
+    color:#1b75bc;
+}
+/*====================================
+    RESPONSIVE DESIGN
+====================================*/
+
+
+
+/*====================================
+    PRINT (A4)
+====================================*/
+
+@media print{
+
+    body{
+        background:#fff;
+        padding:0;
+    }
+
+    .resume{
+        width:210mm;
+        min-height:297mm;
+        margin:0;
+        box-shadow:none;
+        border-radius:0;
+    }
+
+    a{
+        text-decoration:none;
+        color:#000;
+    }
+
+}
+
+/*====================================
+    SCROLLBAR
+====================================*/
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#1b75bc;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#e5e5e5;
+}
+
+/*====================================
+    SELECTION
+====================================*/
+
+::selection{
+    background:#1b75bc;
+    color:#fff;
+}
+
+/*====================================
+    ANIMATION
+====================================*/
+
+.header,
+.sidebar,
+.content{
+    animation:fade .8s ease;
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*====================================
+    PROFILE IMAGE
+====================================*/
+
+.profile img:hover{
+
+    transform:scale(1.05);
+    transition:.4s;
+
+}
+
+/*====================================
+    SECTION SPACING
+====================================*/
+
+.section:last-child{
+
+    margin-bottom:0;
+
+}
+
+/*====================================
+    CLEAN LINKS
+====================================*/
+
+a{
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    opacity:.8;
+
+}
+
+/*====================================
+    FINISH
+====================================*/
+
+.resume{
+
+    border:1px solid #d8d8d8;
+
+}
+
+.header{
+
+    background:#fff;
+
+}
+.educa{
+    margin-top: 5px;
+}
+        </Style>
+
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!--================ HEADER ================-->
+
+    <header class="header">
+
+        <div class="header-content">
+
+            <div class="name-section">
+
+                <h1>Faizan Rasool</h1>
+
+                <h2>Assosiate Engineer (CIT) & FRONTEND WEB DEVELOPER</h2>
+
+            </div>
+
+            <div class="contact">
+
+                <div>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span>+92 3184704766</span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span>faizanonway@gmail.com</span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>Kamalia, Pakistan</span>
+
+                </div>
+
+                
+
+                <div>
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <span>github.com/faizanrasool23</span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    <span>linkedin.com/in/faizan-rasool</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="profile">
+
+            <img src="faizan.jpg" alt="Profile">
+
+        </div>
+
+    </header>
+
+    <!--================ BODY ================-->
+
+    <div class="resume-body">
+
+        <!--=========== LEFT SIDEBAR ===========-->
+
+        <aside class="sidebar">
+
+            <!-- Technical Skills -->
+
+            <section class="box">
+
+                <h3>
+
+                    <i class="fa-solid fa-code"></i>
+
+                    TECHNICAL SKILLS
+
+                </h3>
+
+                <ul>
+
+                    <li>HTML5</li>
+
+                    <li>CSS3</li>
+
+                    <li>JavaScript (ES6+)</li>
+
+                    <li>TypeScript (Basic)</li>
+
+                    <li>React.js</li>
+
+                    <li>Tailwind CSS</li>
+
+                    <li>Bootstrap</li>
+
+                    <li>Git & GitHub</li>
+                    <li>Responsive Design</li>
+
+                </ul>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Problem Solving</li>
+<li>Teamwork</li>
+<li>Communication</li>
+<li> Learning</li>
+            <li> Management</li>
+                </ul>
+
+            </section>
+
+            <!-- Tools -->
+
+            <section class="box">
+
+                <h3>
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    TOOLS & TECHNOLOGIES
+
+                </h3>
+
+                <ul>
+
+                    <li>VS Code</li>
+
+                   
+
+                    <li>Chrome DevTools</li>
+
+                    <li>Postman</li>
+
+                    <li>Netlify / Vercel</li>
+
+                   
+
+                </ul>
+
+            </section>
+
+            <!-- Languages -->
+
+            <section class="box">
+
+                <h3>
+
+                    <i class="fa-solid fa-language"></i>
+
+                    LANGUAGES
+
+                </h3>
+
+                <ul>
+
+                    <li>English</li>
+
+                    <li>Urdu</li>
+
+                </ul>
+
+            </section>
+
+        </aside>
+
+        <!--=========== RIGHT SIDE ===========-->
+
+        <main class="content">
+            <!-- ================= PROFESSIONAL SUMMARY ================= -->
+
+<section class="section">
+
+    <div class="title">
+
+        <i class="fa-solid fa-user"></i>
+
+        <h2>PROFESSIONAL SUMMARY</h2>
+
+    </div>
+
+    <hr>
+
+    <p>
+I am a highly motivated and dedicated IT professional with a solid academic foundation in Computer Information Technology (CIT) and strong web development capabilities. Possessing excellent core conceptual alignment, communication, teamwork, and problem-solving skills, I am a quick learner eager to apply my technical expertise to real-world projects. I look forward to contributing positively to the success of an organization while expanding my professional experience.
+
+    </p>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="section">
+
+    <div class="title">
+
+        <i class="fa-solid fa-briefcase"></i>
+
+        <h2>PROJECTS</h2>
+
+    </div>
+
+    <hr>
+
+    <div class="project">
+
+        <div class="project-head">
+
+            <h3>1. Personal Portfolio Website</h3>
+
+            <div class="links">
+
+                <a href="#">Live Demo</a>
+
+                <a href="#">GitHub</a>
+
+            </div>
+
+        </div>
+
+        <p>
+
+            A modern responsive portfolio website developed using
+            React.js and Tailwind CSS.
+
+        </p>
+
+        <strong>Technologies :</strong>
+
+        React.js, Tailwind CSS, Vite
+
+    </div>
+
+    <hr class="dashed">
+
+    <div class="project">
+
+        <div class="project-head">
+
+            <h3>2. React News App</h3>
+
+            <div class="links">
+
+                <a href="#">Live Demo</a>
+
+                <a href="#">GitHub</a>
+
+            </div>
+
+        </div>
+
+        <p>
+
+            News application that fetches real-time news using
+            News API with multiple categories.
+
+        </p>
+
+        <strong>Technologies :</strong>
+
+        React.js, JavaScript, REST API
+
+    </div>
+
+    <hr class="dashed">
+
+   
+
+</section>
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="section">
+
+    <div class="title">
+
+        <i class="fa-solid fa-graduation-cap"></i>
+
+        <h2>EDUCATION</h2>
+
+    </div>
+
+    <hr>
+
+    <div class="edu">
+
+        <div>
+
+            <h3>Diploma of Associate Engineering <br>
+                 (DAE) in Computer Information Technology</h3>
+                 <p>1st Year Result: 88% <br>
+                    2nd Year Result: 94% <br>
+                    3rd Year Result: Awaited</p>
+
+            <p>Punjab Board of Technical Education</p>
+
+
+        </div>
+
+        <span>2023 – 2026</span>
+  
+    </div>
+    <div class="edu educa">
+
+        <div >
+
+            <h3>Matriculation</h3>
+                 
+
+            <p>Board of Intermediate and Secondary Education</p>
+
+
+        </div>
+
+        <span>2021 – 2023</span>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ADDITIONAL INFORMATION ================= -->
+
+<section class="section">
+
+    <div class="title">
+
+        <i class="fa-solid fa-circle-info"></i>
+
+        <h2>ADDITIONAL INFORMATION</h2>
+
+    </div>
+
+    <hr>
+
+    <ul class="info">
+
+        <li>
+            <strong>Strengths :</strong>
+            Problem Solving, Teamwork, Time Management, Quick Learner
+        </li>
+
+        <li>
+            <strong>Interest :</strong>
+            Web Development, UI/UX Design, Learning New Technologies
+        </li>
+
+        <li>
+            <strong>Availability :</strong>
+            Available for Full-Time / Remote Opportunities
+        </li>
+
+    </ul>
+
+</section>
+
+</main>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
