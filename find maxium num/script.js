@@ -15,6 +15,8 @@
 
 // console.log(findMax(numbers));
 
+let numbers = [5, 12, 7,25, 20];
+
 function findMax(arr) {
     let max = arr[0];
 
@@ -23,14 +25,13 @@ function findMax(arr) {
         if (num>max) {
             max=num
         }
-        // tumhari logic
+       
 
     });
 
     return max;
 
 }
-let numbers = [5, 12, 7,25, 20];
 
 console.log(findMax(numbers));
 

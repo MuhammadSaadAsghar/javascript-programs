@@ -1,7 +1,7 @@
-let name="saad";
+// let name="saad";
 
-let reverse=name.split("").reverse().join("");
-console.log(reverse)
+// let reverse=name.split("").reverse().join("");
+// console.log(reverse)
 
 // let nam = "kaka"
 // let reversed=""
@@ -23,3 +23,19 @@ console.log(reverse)
 // }
 
 // console.log(reversestring("pyra"))
+
+let name="saad"
+let reverse=name.split("").reverse("").join("");
+
+console.log(reverse)
+
+
+let nam = "faisal"
+let reversed=""
+for (let i = nam.length-1; i >= 0; i--) {
+   reversed += nam[i]
+    
+   console.log(reversed);
+   
+}
+
